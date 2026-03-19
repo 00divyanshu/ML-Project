@@ -2,4 +2,8 @@ panda
 numpy
 seaborn
 scikit-learn
+catboost
+xgboost
+Flask
+
 -e .

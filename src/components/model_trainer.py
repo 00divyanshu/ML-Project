@@ -108,9 +108,10 @@ class ModelTrainer:
 
             predicted=best_model.predict(X_test)
 
+           
             r2_square = r2_score(y_test, predicted)
+            logging.info(f"R2 Score of best model: {r2_square}")
             return r2_square
-            
 
 
 

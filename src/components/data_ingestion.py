@@ -17,11 +17,11 @@ class DataIngestion:
     def __init__(self):
         self.ingestion_config=DataIngestionConfig()
 
-    def initiate_data_ingention(self):
+    def initiate_data_ingestion(self):
         logging.info("Data Ingestion method or component is entered")
         try:
             df=pd.read_csv("notebook\data\stud.csv")
-            logging.info("Dataset is readed as datafarme")
+            logging.info("Dataset is read as datafarme")
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
             
@@ -45,6 +45,6 @@ class DataIngestion:
 
 if __name__=="__main__":
     obj=DataIngestion()
-    obj.initiate_data_ingention()
+    obj.initiate_data_ingestion()
 
 
